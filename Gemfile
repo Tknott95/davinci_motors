@@ -1,6 +1,13 @@
 source 'https://rubygems.org'
 
-
+gem 'ruby_gntp'
+gem 'rspec-rails'
+gem 'guard-bundler'
+gem 'guard-rspec'
+gem 'factory_girl_rails'
+group :test do
+  gem 'capybara'
+end
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.6'
 # Use sqlite3 as the database for Active Record
@@ -22,14 +29,7 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0', group: :doc
-gem 'ruby_gntp'
-gem 'rspec-rails'
-gem 'guard-bundler'
-gem 'guard-rspec'
-gem 'factory_girl_rails'
-group :test do
-  gem 'capybara'
-end
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
